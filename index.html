@@ -1,216 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>InnoHub</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <div class="nav">
-        <div class="navbar">
-          <div class="nav">
-            <div class="logo">
-              <img src="logo.png" alt="My Logo" width="120">
-            </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InnoHub</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-            <div class="nav-center">
-              <ul class="list" id="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-              </ul>
-            </div>
-
-            <div class="nar-right">
-              <button>Get Started</button>
-            </div>
-
-            <div class="opein-menu" id="menuToggle">
-              <i class="fa-solid fa-bars" id="openIcon"></i>
-              <i class="fa-solid fa-xmark" id="closeIcon"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mobile Overlay Menu -->
-      <!-- Toggle Button (hamburger icon) -->
-<div class="menu-toggle" id="menuToggle">
-  <i class="fa-solid fa-bars"></i>
-</div>
-
-<!-- Mobile Menu Overlay -->
-<div class="mobile-menu-overlay" id="mobileMenu">
-  <div class="close-btn" id="closeMenu">&times;</div>
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-  </ul>
-</div>
-
-      <!-- container -->
-     <section class="hero">
-    <div>
-      <!-- <h2 class="text">Grow Your Business with Us</h2>
-      <p class="text">We provide modern solutions for your online success.</p>
-      <br>
-      <a href="#services" class="btn ">Get Started</a> -->
+<!-- Navbar -->
+<header class="navbar">
+  <div class="navbar-container">
+    <div class="logo">
+      <a href="#"><img src="logo.png" alt="InnoHub Logo"></a>
     </div>
-  </section>
+
+    <nav class="nav-links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="#">Our Brand <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Brand 1</a></li>
+            <li><a href="#">Brand 2</a></li>
+            <li><a href="#">Brand 3</a></li>
+            <li><a href="#">Brand 4</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="mobile-menu-icon">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+
+  <!-- Mobile Side Drawer -->
+  <div class="mobile-drawer">
+    <div class="close-drawer">&times;</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li class="mobile-dropdown">
+        <a href="#">Our Brand <i class="fa-solid fa-caret-down"></i></a>
+        <ul class="mobile-dropdown-menu">
+          <li><a href="https://ultraaudio.in/">Ultraaudio</a></li>
+          <li><a href="https://autonexa.in/">Autonexa</a></li>
+          <li><a href="#">Brand 3</a></li>
+          <li><a href="#">Brand 4</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+
+<!-- Hero / Banner Section -->
+<section class="hero">
+  <div class="hero-image">
+    <img src="banner.jpg" alt="Banner Image">
+  </div>
+</section>
 
 
 
-
-  <!-- about page -->
-   <section class="about-section">
+<section class="about-section" id="about">
   <div class="about-container">
     
-    <!-- Left Side Image -->
+    <!-- Left Image -->
     <div class="about-image">
       <img src="honour.png" alt="About Us Image">
     </div>
     
-    <!-- Right Side Content -->
+    <!-- Right Text Content -->
     <div class="about-content">
       <h2>About Us</h2>
       <p>
-        ANI Auto Mobility Private Limited (hereinafter referred to as the “Company”) is a private 
-limited company duly incorporated under the provisions of the Companies Act, 2013, having 
-its Corporate Identification Number (CIN:U45300DL2025PTC450426) issued by the 
-Registrar of Companies (ROC), Delhi  with its registered office situated in Karol Bagh, 
-Delhi, India.
+        <strong>ANI Auto Mobility Private Limited</strong> – Driving Innovation, Style & Safety<br><br>
+        ANI Auto Mobility Private Limited is a private limited company incorporated under the Companies Act, 2013, with CIN: U45300DL2025PTC450426, registered office in Karol Bagh, Delhi.<br><br>
+        Established in 2025, the Company engages in designing, developing, manufacturing, branding, and distributing superior-grade automotive accessories and infotainment solutions under Founder & Director Mr. Aniket Kumar.
       </p>
 
-      <div class="about-list">
-        <ul>
-          <li>Ultra Audio</li>
-          <li>Auto Nexa </li>
-          <li>Sound Auto 
-</li>
-          <li>High Beats 
-</li>
-         
-        </ul>
+      <!-- Brand Cards -->
+      <div class="about-cards">
+        <div class="card">
+          <h5>Ultra Audio <span class="arrow">→</span></h5>
+          <p>High-performance car audio systems designed for crystal-clear sound and power.</p>
+        </div>
+        <div class="card">
+          <h5>Auto Nexa <span class="arrow">→</span></h5>
+          <p>Smart automotive solutions combining modern aesthetics and integrated technology.</p>
+        </div>
+        <div class="card">
+          <h5>Sound Auto <span class="arrow">→</span></h5>
+          <p>Infotainment solutions offering premium audio experience for every vehicle.</p>
+        </div>
+        <div class="card">
+          <h5>High Beats <span class="arrow">→</span></h5>
+          <p>Cutting-edge car audio and accessories ensuring style, innovation, and safety.</p>
+        </div>
       </div>
-
-      <a href="about.html" class="learn-more">Learn More →</a>
     </div>
 
   </div>
 </section>
 
-  
+
+<section class="brand-section">
+  <div class="brand-header">
+    <h1>Our Trusted Brands</h1>
+   
+  </div>
+
+  <div class="brand-container">
+
+    <div class="brand-card">
+      <img src="brand1.png" alt="Brand 1">
+    </div>
+
+    <div class="brand-card">
+      <img src="brand2.png" alt="Brand 2">
+    </div>
+
+    <div class="brand-card">
+      <img src="brand3.png" alt="Brand 3">
+    </div>
+
+    <div class="brand-card">
+      <img src="brand4.png" alt="Brand 4">
+    </div>
+
+  </div>
+</section>
 
 
+<section class="count-section" id="count">
+  <div class="count-container">
+
+    <div class="count-card">
+      <h2 data-target="500">0</h2>
+      <p>Happy Customers</p>
+    </div>
+
+    <div class="count-card">
+      <h2 data-target="200">0</h2>
+      <p>Products Sold</p>
+    </div>
+
+    <div class="count-card">
+      <h2 data-target="2025">0</h2>
+      <p>Projects Completed</p>
+    </div>
+
+    <div class="count-card">
+      <h2 data-target="20">0</h2>
+      <p>Years of Experience</p>
+    </div>
+
+  </div>
+</section>
 
 
+<section class="faq-section" id="faq">
+  <div class="faq-container">
+    <h2>Frequently Asked Questions</h2>
 
-
-
-
-
-
-
-      <div class="con">
-        <div class="head">
-          <h1 class="animated-heading">
-  <span class="outside">Our </span>
-  <span class="highlight">Best Services</span>
-  <span class="outside"> We Offer.</span>
-</h1>
-   </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        What is ANI Auto Mobility Private Limited?
+        <span class="faq-arrow">&#9660;</span>
       </div>
-
-      
-
-    <!-- card -->
-      <div class="cardsection">
-
-    <div class="card">
-      <i class="fas fa-bolt icon"></i>
-      <h5 class="card-title">Fast Innovation</h5>
-      <p class="card-text">
-        ANI Auto Mobility is driven by speed and innovation, ensuring every product is designed to keep pace with the rapidly evolving automotive industry.
-      </p>
+      <div class="faq-answer">
+        ANI Auto Mobility Pvt. Ltd. is a company focused on automotive accessories and infotainment solutions, delivering innovation, style, and safety.
+      </div>
     </div>
 
-    <div class="card">
-      <i class="fas fa-car-side icon"></i>
-      <h5 class="card-title">Smart Automotive Solutions</h5>
-      <p class="card-text">
-        From infotainment to advanced security systems, our solutions redefine modern driving with smarter, safer, and stylish technology.
-      </p>
+    <div class="faq-item">
+      <div class="faq-question">
+        What brands does the company operate?
+        <span class="faq-arrow">&#9660;</span>
+      </div>
+      <div class="faq-answer">
+        The company operates Ultra Audio, Auto Nexa, Sound Auto, and High Beats, offering premium automotive products.
+      </div>
     </div>
 
-    <div class="card">
-      <i class="fas fa-users icon"></i>
-      <h5 class="card-title">Customer First</h5>
-      <p class="card-text">
-        With a wide customer base including car owners, dealerships, and fleet operators, we ensure unmatched support and satisfaction at every step.
-      </p>
+    <div class="faq-item">
+      <div class="faq-question">
+        Where is the registered office located?
+        <span class="faq-arrow">&#9660;</span>
+      </div>
+      <div class="faq-answer">
+        The registered office is in Karol Bagh, Delhi, India.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        When was the company established?
+        <span class="faq-arrow">&#9660;</span>
+      </div>
+      <div class="faq-answer">
+        ANI Auto Mobility Pvt. Ltd. was established in 2025.
+      </div>
     </div>
 
   </div>
+</section>
 
 
-  <!-- coutn  -->
-   <div class="counter-section" id="counterSection">
-    <div class="circle" data-target="500">0</div>
-    <div class="circle" data-target="200">0</div>
-    <div class="circle" data-target="2025">0</div>
-    <div class="circle" data-target="20">0</div>
+
+<section class="contact-section" id="contact">
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <!-- Contact Cards -->
+    <div class="contact-cards">
+      <div class="contact-card">
+        <i class="fas fa-map-marker-alt"></i>
+        <h5>Address</h5>
+        <p>Karol Bagh, Delhi, India</p>
+      </div>
+      <div class="contact-card">
+        <i class="fas fa-phone"></i>
+        <h5>Phone</h5>
+        <p>+91 98765 43210</p>
+      </div>
+      <div class="contact-card">
+        <i class="fas fa-envelope"></i>
+        <h5>Email</h5>
+        <p>info@aniauto.com</p>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form-container">
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Subject" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message <span>&#8594;</span></button>
+      </form>
+    </div>
   </div>
+</section>
 
 
 
 
 
-      
-
-      <!-- Our Onboarding Partner -->
-       <div class="onboarding">
-  <div class="head">
-    <h1 class="animated-heading">
-      <span class="outside">Our </span>
-      <span class="highlight">Onboarding Partners</span>
-    </h1>
-  </div>
-
-  <div class="slider-container">
-    <div class="shadow-left"></div>
 
 
-    <div class="slider">
-  <div class="slide-track">
-    <a href="https://autonexa.in/"><img src="brand1.png" alt="Brand 1 Logo"></a>
-    <a href="https://ultraaudio.in/"><img src="brand2.png" alt="Brand 2 Logo"></a>
-    <a href="#"><img src="brand3.png" alt="Brand 3 Logo"></a>
-    <a href="#"><img src="brand4.png" alt="Brand 4 Logo"></a>
-  </div>
-</div>
-    
-    
-
-    <div class="shadow-right"></div>
-  </div>
-       </div>
 
 
-  <!-- footer -->
-   <footer class="footer">
-  <div class="container1">
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
     <div class="footer-top">
       <div class="footer-brand">
-      <div class="logo">
-  <img src="logo.png" alt="My Logo" width="120" class="white-logo">
-</div>
+        <img src="logo.png" alt="InnoHub Logo" class="footer-logo">
         <p>Innovative software solutions driving your digital transformation.</p>
       </div>
 
@@ -249,10 +302,10 @@ Delhi, India.
 
     <div class="footer-bottom">
       <div class="social-icons">
-        <a href="#" aria-label="Facebook"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" /></a>
-        <a href="#" aria-label="Twitter"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" /></a>
-        <a href="#" aria-label="LinkedIn"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" /></a>
-        <a href="#" aria-label="Instagram"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" /></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
       </div>
       <p>&copy; 2025 InnoHub. All rights reserved.</p>
     </div>
@@ -260,9 +313,6 @@ Delhi, India.
 </footer>
 
 
-
-    </div>
-
-    <script src="marketing.js"></script>
-  </body>
+<script src="script.js"></script>
+</body>
 </html>
